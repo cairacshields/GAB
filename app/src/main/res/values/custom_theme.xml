@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyAppTheme" parent="FirebaseUI">
+        <item name="colorPrimary">#fbb03b</item>
+        <item name="colorAccent">#FFFFFF</item>
+        <item name="colorPrimaryDark">#BFC0C0</item>
+        <item name="colorControlNormal">#BFC0C0</item>
+        <item name="colorControlActivated">#fbb03b</item>
+        <item name="colorControlHighlight">#fbb03b</item>
+    </style>
+</resources>

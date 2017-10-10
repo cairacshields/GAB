@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.imac.gab.userProfile">
+
+    <include
+        layout="@layout/my_toolbar"
+        android:id="@+id/myToolbar"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorPrimaryDark"
+        app:srcCompat="?attr/dividerHorizontal"
+        android:id="@+id/notImportant"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/userName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="User Name"
+        android:textSize="35sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userName"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/uploadPicture"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/uploadpicture"
+        android:id="@+id/uploadPicture"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/myToolbar"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

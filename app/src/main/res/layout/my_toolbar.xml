@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/my_toolbar"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:layout_margin="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:src="@drawable/settings"
+        android:id="@+id/settings"
+        android:layout_gravity="left"
+        />
+
+    <ImageView
+        android:id="@+id/signOut"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:src="@drawable/signout"
+        android:layout_gravity="right"
+        />
+    <ImageView
+        android:layout_margin="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:src="@drawable/user"
+        android:layout_gravity="right"
+        android:id="@+id/userProfile"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="GAB"
+        android:textSize="50sp"
+        android:id="@+id/logo_text"
+        android:textColor="#ffffff"
+        />
+
+
+</android.support.v7.widget.Toolbar>
