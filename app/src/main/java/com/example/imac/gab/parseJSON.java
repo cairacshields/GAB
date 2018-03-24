@@ -24,9 +24,12 @@ public class parseJSON {
 
             Iterator<String> keys = obj.keys();
 
+            //Ensure that the arrayList is empty or we could get duplicates
             arrayList.clear();
 
             //Here we use the Iterator and Keys() to handle our unique objects
+            //Simply put, we will iterate over each object and get the pieces of data that we need.
+            //We then set the values created in the myGroups class.
             while(keys.hasNext()){
                 String key = keys.next();
                 JSONObject inside = obj.getJSONObject(key);
@@ -38,10 +41,12 @@ public class parseJSON {
                 anotherGroup.setGroupName(inside.getString("groupName"));
                 anotherGroup.setGroupCreationDate(inside.getString("groupCreationDate"));
 
+                //Each time the while loop runs, we add another group to the arrayList until there are none left.
                 arrayList.add(anotherGroup);
-
+            //Then we simply return the completed arrayList.
             }return arrayList;
 
+        //If there is an error, we need to handle it
         }catch (Exception e){
             e.printStackTrace();
             return null;

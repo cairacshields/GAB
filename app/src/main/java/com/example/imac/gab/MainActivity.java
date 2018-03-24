@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         loginButton = (Button)findViewById(R.id.loginButton);
         uploadPicture = (ImageView)findViewById(R.id.uploadPicture);
-        //Below condition will check if the curent user is already logged in or not.
+        //Below condition will check if the current user is already logged in or not.
         if(auth.getCurrentUser() != null) {
             //already Signed in, start signedInActivity
             startActivity(new Intent(this, signedInActivity.class));
@@ -73,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
             //Succesfully Signed in
             if(resultCode == ResultCodes.OK){
                 Toast.makeText(this, "Login Successful", Toast.LENGTH_LONG).show();
-
                 IdpResponse idpResponse = IdpResponse.fromResultIntent(data);
                 startActivity(new Intent(this, signedInActivity.class)
                 .putExtra("the_token", idpResponse.getIdpToken()));

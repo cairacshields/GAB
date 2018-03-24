@@ -20,16 +20,24 @@ public class HttpManager {
 
             URL url = new URL(uri);
 
+            //Gain connection to the URL
             HttpURLConnection con = (HttpURLConnection)url.openConnection();
 
+            //We will store the data in a String using the StringBuilder
             StringBuilder builder = new StringBuilder();
 
+            //Using the connection we've established, we can create a reader to read the data from the URL
             reader = new BufferedReader(new InputStreamReader(con.getInputStream()));
             String line;
 
+            //The while loop will run as long as the 'line' is not null or empty.
+            //** Note that 'line' is equal to the data being read by the InputStreamReader
             while((line = reader.readLine()) != null){
 
+                //Most importantly we add each line of data to the StringBuilder
                 builder.append(line);
+
+             //Then return the entire string
             }return builder.toString();
 
         }catch(Exception e){
