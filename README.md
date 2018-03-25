@@ -9,8 +9,8 @@ What does this project do?
        ~ GAB is an Android chat app that connects users from across the world. The platform is meant to be an open space to 
          engage and interact with those that have similar interest. 
     
-      ~ GAB is still in production, there are a few minor tweaks and final snippets of code that need to be written. 
-        I'm hoping that some awesome code can take a moment and contribute. 
+      ~ GAB is still in development, there are a few minor tweaks and final snippets of code that need to be written. 
+        I'm hoping that some awesome coder can take a moment and contribute. 
    
       ~ GAB takes advantage of Facebook and Google Plus login and authentication protocols. It also makes use of the Giphy 
         API, for searching and pulling the requested GIF's.
